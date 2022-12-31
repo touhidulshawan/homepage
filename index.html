@@ -11,18 +11,24 @@
 
 <body>
     <div class="container">
+        <!-- url or search input -->
+        <div>
+            <form onsubmit="submitQuery(event)" id="searchForm">
+                <input type="text" placeholder="Search here..." name="searchBar" id="inputBar">
+            </form>
+        </div>
         <div class="wrapper">
             <div class="link-wrapper">
                 <a href="https://app.intigriti.com/researcher/dashboard" class="intigriti"><i class="fa-solid fa-bug"></i></a>
+            </div>
+            <div class="link-wrapper">
+                <a href="https://hackerone.com/directory" class="hacker1"><i class="fa-brands fa-hackerrank"></i></a>
             </div>
             <div class="link-wrapper">
                 <a href="http://hackthebox.com" class="htb"><i class="fa-brands fa-codepen"></i></a>
             </div>
             <div class="link-wrapper">
                 <a href="https://tryhackme.com" class="thm"><i class="fa-solid fa-cloud-showers-heavy"></i></a>
-            </div>
-            <div class="link-wrapper">
-                <a href="https://www.hacker101.com/" class="h101"><i class="fa-brands fa-hackerrank"></i></a>
             </div>
             <div class="link-wrapper">
                 <a href="https://portswigger.net/web-security/all-labs" class="dashboard">
@@ -63,6 +69,7 @@
             </div>
         </div>
     </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

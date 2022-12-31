@@ -1,5 +1,6 @@
 :root {
   --black: #282828;
+  --black2: #1d2021;
   --red: #fb4934;
   --green: #b8bb26;
   --yellow: #fabd2f;
@@ -7,22 +8,26 @@
   --magenta: #d3869b;
   --cyan: #8ec07c;
   --white: #ebdbb2;
+  --orange: #af3a03;
   --lightdark: #3c3836;
   --shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 .container {
   width: 100%;
-  height: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background: var(--black);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 25px;
 }
 
 .wrapper {
@@ -32,6 +37,21 @@
   grid-template-rows: 1fr 1fr;
   row-gap: 25px;
   column-gap: 15px;
+}
+
+/* style of searchBar */
+
+#inputBar {
+  padding: 10px 4px;
+  width: 400px;
+  background-color: var(--dark);
+  color: var(--white);
+  font-size: 1.1rem;
+  outline: 0;
+  border: none;
+  border-bottom: 1px solid var(--cyan);
+  margin-top: -25px;
+  text-align: center;
 }
 
 .link-wrapper > a {
@@ -68,8 +88,8 @@
   color: var(--red);
 }
 
-.h101 > i {
-  color: var(--magenta);
+.hacker1 > i {
+  color: var(--yellow);
 }
 
 .github > i {
@@ -87,24 +107,31 @@
 .insta > i {
   color: var(--red);
 }
+
 .whatsapp > i {
   color: var(--green);
 }
+
 .twitter > i {
   color: var(--blue);
 }
+
 .intigriti > i {
   color: var(--magenta);
 }
+
 .torrent > i {
   color: var(--cyan);
 }
+
 .fiverr > i {
   color: var(--green);
 }
+
 .dashboard > i {
   color: var(--red);
 }
+
 .notion > i {
   color: var(--yellow);
 }
