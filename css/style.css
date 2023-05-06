@@ -19,23 +19,44 @@
   box-sizing: border-box;
 }
 
-.container {
-  width: 100%;
+body {
+  width: 80%;
   height: 100vh;
   background: var(--black2);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.cover_image_container {
+  width: 80%;
+  box-shadow: rgba(211, 134, 155, 0.4) 5px 5px,
+    rgba(211, 134, 155, 0.3) 10px 10px, rgba(211, 134, 155, 0.2) 15px 15px,
+    rgba(211, 134, 155, 0.1) 20px 20px, rgba(211, 134, 155, 0.05) 25px 25px;
+}
+.cover_image_container > img {
+  width: 100%;
+}
+
+.content_container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: 20px;
 }
 
 .wrapper {
-  width: 60%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-template-rows: 1fr 1fr;
-  row-gap: 25px;
+  row-gap: 30px;
   column-gap: 15px;
 }
 
@@ -43,13 +64,12 @@
 
 #inputBar {
   padding: 10px 4px;
-  width: 400px;
+  width: 580px;
   background-color: var(--dark);
   color: var(--white);
   font-size: 1.1rem;
   outline: 0;
   border: none;
-  border-bottom: 1px solid var(--cyan);
   margin-top: -25px;
   text-align: center;
 }
@@ -61,12 +81,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid var(--white);
-  border-left: 2px solid var(--white);
-  border-bottom: 4px solid var(--white);
-  border-right: 5px solid var(--white);
-  border-radius: 2px;
-  box-shadow: var(--shadow);
+  box-shadow: rgba(131, 165, 152, 0.4) -5px 5px,
+    rgba(131, 165, 152, 0.3) -10px 10px, rgba(131, 165, 152, 0.2) -15px 15px,
+    rgba(131, 165, 152, 0.1) -20px 20px, rgba(131, 165, 152, 0.05) -25px 25px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -100,18 +117,6 @@
   color: var(--red);
 }
 
-.fb > i {
-  color: var(--blue);
-}
-
-.insta > i {
-  color: var(--red);
-}
-
-.whatsapp > i {
-  color: var(--green);
-}
-
 .twitter > i {
   color: var(--blue);
 }
@@ -119,19 +124,18 @@
 .intigriti > i {
   color: var(--magenta);
 }
-
-.torrent > i {
-  color: var(--cyan);
-}
-
-.fiverr > i {
-  color: var(--green);
-}
-
 .dashboard > i {
   color: var(--red);
 }
-
-.notion > i {
+.h101 > i {
+  color: var(--cyan);
+}
+.jhaddix_blog {
   color: var(--yellow);
+}
+.vickie_blog {
+  color: var(--green);
+}
+.exploit-db {
+  color: var(--blue);
 }
