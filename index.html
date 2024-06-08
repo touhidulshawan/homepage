@@ -1,106 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/main.css">
     <title>Home Page</title>
-  </head>
+</head>
 
-  <body>
-    <div class="content_container">
-      <!-- url bar -->
-      <div>
-        <form onsubmit="submitQuery(event)" id="urlForm">
-          <input
-            type="text"
-            placeholder="Search here..."
-            name="urlBarInput"
-            id="urlBar"
-          />
-        </form>
-      </div>
-      <div class="wrapper">
-        <div class="link-wrapper">
-          <a
-            href="https://app.intigriti.com/researcher/dashboard"
-            class="intigriti"
-            ><i class="fa-solid fa-bug"></i
-          ></a>
+<body>
+    <main class="flex justify-center items-center gap-12 min-h-lvh px-4" style="background-color: #282828;">
+        <div class="flex flex-col justify-center items-center gap-4">
+        <!-- url bar -->
+        <div>
+            <form onsubmit="submitQuery(event)" id="urlForm">
+                <input class="p-4 border-b-2 border-pink-500 text-pink-600 rounded-sm focus:ring-2 ring-pink-400 mb-8" style="background-color: #282828;" type="text" placeholder="Search here..." name="urlBarInput" id="urlBar" />
+            </form>
         </div>
-        <div class="link-wrapper">
-          <a href="https://hackerone.com/directory" class="hacker1"
-            ><i class="fa-brands fa-hackerrank"></i
-          ></a>
+        <div class="flex gap-6">
+            <a href="https://laravel.com/docs/11.x" class="w-28 h-28 bg-rose-100 rounded-md shadow-xl shadow-rose-600 flex justify-center items-center hover:shadow-2xl hover:shadow-rose-400 transition ease-in-out delay-100">
+                <i class="fa-brands fa-laravel text-rose-800 text-6xl"></i>
+            </a>
+            <a href="https://github.com/touhidulshawan?tab=repositories" class="w-28 h-28 bg-gray-100 rounded-md shadow-xl shadow-gray-600 flex justify-center items-center hover:shadow-2xl hover:shadow-gray-400 transition ease-in-out delay-100">
+                <i class="fa-brands fa-github text-gray-800 text-6xl"></i> 
+            </a>
+            <a href="https://laravel.com/docs/11.x" class="w-28 h-28 bg-red-100 rounded-md shadow-xl shadow-red-600 flex justify-center items-center hover:shadow-2xl hover:shadow-red-400 transition ease-in-out delay-100">
+                <i class="fa-brands fa-youtube text-red-800 text-6xl"></i>
+            </a>
+            <a href="https://chatgpt.com/" class="w-28 h-28 bg-blue-100 rounded-md shadow-xl shadow-blue-600 flex justify-center items-center hover:shadow-2xl hover:shadow-blue-400 transition ease-in-out delay-100">
+                <i class="fa-solid fa-robot text-blue-800 text-6xl"></i>
+            </a>
+            <a href="https://gemini.google.com/app" class="w-28 h-28 bg-pink-100 rounded-md shadow-xl shadow-pink-600 flex justify-center items-center hover:shadow-2xl hover:shadow-pink-400 transition ease-in-out delay-100">
+                <i class="fa-solid fa-brain text-pink-800 text-6xl"></i>
+            </a>
         </div>
-        <div class="link-wrapper">
-          <a href="http://hackthebox.com" class="htb"
-            ><i class="fa-brands fa-codepen"></i
-          ></a>
-        </div>
-        <div class="link-wrapper">
-          <a href="https://www.hacker101.com/" class="h101">
-            <i class="fa-solid fa-skull-crossbones"></i>
-          </a>
-        </div>
-        <div class="link-wrapper">
-          <a href="https://tryhackme.com" class="thm"
-            ><i class="fa-solid fa-cloud-showers-heavy"></i
-          ></a>
-        </div>
-        <div class="link-wrapper">
-          <a
-            href="https://portswigger.net/web-security/all-labs"
-            class="dashboard"
-          >
-            <i class="fa-solid fa-flag-checkered"></i
-          ></a>
-        </div>
-        <div class="link-wrapper">
-          <a
-            href="https://github.com/touhidulshawan?tab=repositories"
-            class="github"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-        </div>
-        <div class="link-wrapper">
-          <a href="https://www.youtube.com" class="yt"
-            ><i class="fa-brands fa-youtube"></i
-          ></a>
-        </div>
-        <div class="link-wrapper">
-          <a href="https://twitter.com/" class="twitter"
-            ><i class="fa-brands fa-twitter"></i
-          ></a>
-        </div>
-        <div class="link-wrapper">
-          <a href="https://chat.openai.com/" class="chatgpt">
-            <i class="fa-solid fa-robot"></i>
-          </a>
-        </div>
-        <div class="link-wrapper">
-          <a href="https://www.jhaddix.com/blog" class="jhaddix_blog">
-            <i class="fa-sharp fa-solid fa-blog"></i>
-          </a>
-        </div>
-        <div class="link-wrapper">
-          <a href="https://www.exploit-db.com/" class="exploit-db">
-            <i class="fa-solid fa-database"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="cover_image_container">
-      <img src="./assets/hacker.gif" alt="Hacker gif" />
-    </div>
 
+        </div>
+        </div>
+        <div class="border-3 w-80 h-80">
+            <img src="./assets/hacker.gif" class="w-80 h-80 rounded-2xl shadow-2xl shadow-pink-400" alt="Hacker gif" />
+        </div>
+    </main>
     <script src="js/main.js"></script>
-  </body>
+</body>
 </html>
